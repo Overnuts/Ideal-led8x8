@@ -13,6 +13,14 @@ This project provides a basic example for using the ESP32-C3 development board w
 
 ## Environment Setup
 
+### PlatformIO (Recommended)
+
+1.  Install the **PlatformIO IDE** extension in VS Code.
+2.  Open this project folder in VS Code.
+3.  PlatformIO will automatically download the necessary platforms and libraries (U8g2).
+4.  Connect your ESP32-C3 board via USB-C.
+5.  Click the **Upload** button (check icon) in the PlatformIO toolbar.
+
 ### Arduino IDE
 
 1.  **Install ESP32 Board Support:**
@@ -25,12 +33,10 @@ This project provides a basic example for using the ESP32-C3 development board w
     - Go to **Sketch > Include Library > Manage Libraries...**.
     - Search for `U8g2` and install the library by Oliver.
 
-### Usage
-
-1.  Open `esp32_c3_oled_example.ino` in the Arduino IDE.
-2.  Connect your ESP32-C3 board via USB-C.
-3.  Select the correct COM port.
-4.  Click **Upload**.
+3.  **Usage:**
+    - Open `src/main.cpp`.
+    - Note: You may need to rename it back to `.ino` or create a new sketch and copy the content if using older Arduino IDE versions.
+    - Connect board and click **Upload**.
 
 ## Pinout Reference
 
