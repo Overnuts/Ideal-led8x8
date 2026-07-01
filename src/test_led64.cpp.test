@@ -1,0 +1,42 @@
+#include <Arduino.h>
+#include "Led64.h"
+
+// Test pin
+#define MATRIX_PIN 2
+
+Led64 matrix(MATRIX_PIN);
+
+void setup() {
+    Serial.begin(115200);
+    matrix.begin();
+}
+
+void loop() {
+    Serial.println("Smiley");
+    matrix.smiley();
+    delay(1000);
+
+    Serial.println("Battery");
+    matrix.battery();
+    delay(1000);
+
+    Serial.println("Sun");
+    matrix.sun();
+    delay(1000);
+
+    Serial.println("Moon");
+    matrix.moon();
+    delay(1000);
+
+    Serial.println("Warning");
+    matrix.warning();
+    delay(1000);
+
+    Serial.println("WifiLost");
+    matrix.wifiLost();
+    delay(1000);
+
+    Serial.println("Clear");
+    matrix.clear();
+    delay(1000);
+}
